@@ -6,25 +6,32 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css"/>
     <link href="https://www.1001fonts.com/poppins-font.html?size=-12"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="clock">
+        <div class="format-txt" onclick="hoursFormat()" >
+            <ul>
+                <li id="hours-24" onclick= "hrsformat1()">24-hours format</li>
+                <li id="hours-12" onclick= "hrsformat2()">12-hours format</li>
+            </ul>
+        </div>
         <div class="time">
             <div class="main-time">
-                <span class="hour">08</span>
-                <span class="colon">:</span>
-                <span class="minute">30</span>
+                <span id="hour">00</span>
+                <span id="colon">:</span>
+                <span id="minute">00</span>
             </div>
             <div class="period">
-                <span class="AM-PM">AM</span>
-                <span class="seconds">28</span>
+                <span id="am-pm">AM</span>
+                <span id="second">00</span>
             </div>
         </div>
         <div class="calender">
-            <span class="month">Sep,</span>
-            <span class="day">Sunday</span>
-            <span class="date">28</span>
-            <span class="year">2025</span>
+            <span id="month">Sep,</span>
+            <span id="day">Sunday</span>
+            <span id="date">28</span>
+            <span id="year">2025</span>
         </div>
     </div>
 </body>
