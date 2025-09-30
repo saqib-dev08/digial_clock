@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-body{
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,123 +15,136 @@ body{
     background-image: url(./images/background_image.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position:center;
+    background-position: center;
     background-attachment: fixed;
 }
-.clock{
+
+.clock {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-color: white;
-width: 24%;
+    color: white;
+    width: 24%;
     background-color: rgb(245 245 245 / 8%);
     backdrop-filter: blur(6px);
     border-radius: 121px;
     border-top: 1px solid rgb(200 195 195 / 52%);
     border-left: 1px solid rgb(200 195 195 / 52%);
-box-shadow:1px 1px 2px rgba(0, 0, 0, 0.99);
-padding: 11px 60px 20px 60px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.99);
+    padding: 11px 60px 20px 60px;
 
 
 }
-.clock:hover{
-     background-color: rgb(245 245 245 / 16%);
-cursor: pointer;
+
+.clock:hover {
+    background-color: rgb(245 245 245 / 16%);
+    cursor: pointer;
 }
-.main-time{
+
+.main-time {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.time{
-     display: flex;
+
+.time {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
-.period{
+
+.period {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-gap: 41px;
-font-weight: 500;
+    gap: 41px;
+    font-weight: 500;
     font-size: 19px;
     margin-left: 2px;
 }
-#hour, #minute{
+
+#hour,
+#minute {
     font-size: 123px;
     font-weight: 500;
 }
-#colon{
+
+#colon {
     font-size: 92px;
 
 
 }
-.calender{
+
+.calender {
     font-size: 20px;
     padding-bottom: 20px;
 }
-.day, .date, .year{
+
+.day,
+.date,
+.year {
     padding-left: 2px;
 }
 
-.format-txt{
+.format-txt {
     display: flex;
     flex-direction: column;
-     background-color: rgb(245 245 245 / 0.031);
+    background-color: rgb(245 245 245 / 0.031);
     backdrop-filter: blur(4px);
     border-radius: 20px;
     border: 1px solid rgb(200 195 195 / 52%);
-padding:  16px 30px ;
+    padding: 16px 30px;
     transform: translate(-2px, 22px);
 
 }
-.format-txt:hover{
-     background-color: rgb(245 245 245 / 16%);
-     cursor: pointer;
-     font-weight: 400;
+
+.format-txt:hover {
+    background-color: rgb(245 245 245 / 16%);
+    cursor: pointer;
+    font-weight: 400;
 
 }
 
-#hours-12{
- display: none;
-}
-#hours-24{
- display: block;
-
-}
-li{
+li {
     list-style: none;
 }
-ul{
+
+ul {
     line-height: 0px;
 }
 
-@media(max-width: 425px){
-    .clock{
+@media(max-width: 425px) {
+    .clock {
         width: 49%;
-padding: 0px 60px 5px 60px;
+        padding: 0px 60px 5px 60px;
 
     }
-    #hour, #minute{
+
+    #hour,
+    #minute {
         font-size: 80px;
     }
-    #colon{
+
+    #colon {
         font-size: 84px;
     }
-.format-txt{
-padding:  12px 20px ;
+
+    .format-txt {
+        padding: 12px 20px;
         margin-bottom: 8px;
 
-    
-}
-.calender{
-    font-size: 17px;
 
-}
-.period{
-    font-size: 17px ;
-gap: 31px;
-}
+    }
+
+    .calender {
+        font-size: 17px;
+
+    }
+
+    .period {
+        font-size: 17px;
+        gap: 31px;
+    }
 }
